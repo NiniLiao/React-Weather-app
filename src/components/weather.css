@@ -1,30 +1,30 @@
 .weather {
   margin-top: 20px;
-  border: 3px dashed grey;
+  border: 3px solid grey;
   border-radius: 20px;
   padding-bottom: 30px;
   width: max-content;
-  padding: 0px 20px 20px 20px;
-  margin-left: 25%;
+  padding: 0px 152px 416px 20px;
 }
 .weather .title {
-  font-size: 4rem;
-
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  top: 28px;
+  left: 23px; 
 }
 .weather form {
-  margin-top: 30px;
+  margin-top: 13px;
 }
 .weather form input {
   padding: 10px;
-  border: none;
-  border-bottom: 2px dashed rgb(2, 57, 88);
+  border-bottom: 2px solid rgb(2, 57, 88);
   margin-right: 10px;
 }
 
 .weather form input:focus {
   outline: none;
-  border-bottom: 3px dashed rgb(2, 57, 88);
+  border-bottom: 3px solid rgb(2, 57, 88);
 }
 
 .weather .getweather {
