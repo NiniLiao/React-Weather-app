@@ -9,14 +9,14 @@ function Weather() {
     country: "",
   });
 
-  const APIKEY = "Enter Your APIKEY here";
+  const APIKEY = "a27f51e2a3623033d718fd4e052e1b15";
   async function weatherData(e) {
     e.preventDefault();
     if (form.city == "") {
       alert("Add values");
     } else {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&APPID=${APIKEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&appid=${APIKEY}`
       )
         .then((res) => res.json())
         .then((data) => data);
@@ -38,12 +38,12 @@ function Weather() {
   };
   return (
     <div className="weather">
-      <span className="title">Weather App</span>
+      <span className="title">Today's Weather</span>
       <br />
       <form>
         <input
           type="text"
-          placeholder="city"
+          placeholder="City"
           name="city"
           onChange={(e) => handleChange(e)}
         />
@@ -55,7 +55,7 @@ function Weather() {
           onChange={(e) => handleChange(e)}
         />
         <button className="getweather" onClick={(e) => weatherData(e)}>
-          Submit
+          Search
         </button>
       </form>
 
