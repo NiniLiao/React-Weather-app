@@ -11,32 +11,47 @@
   padding: 50px;
   border-radius: 20px;
   position: relative;
-  background: rgb(245, 242, 242);
-  border: 1px solid black;
+  /* background: rgb(245, 242, 242);
+  border: 1px solid black; */
 }
 
 .displayweather .maincard .cardtitle {
   position: absolute;
-  top: 10px;
+  top: -12px;
   left: 10px;
-  font-size: 1.5rem;
+  font-size: 18px;
+}
+
+.displayweather .maincard .cardsubtitle-text {
+   position: absolute;
+   top: 168px;
+   left: 15px;
+   font-size: 17px;
 }
 
 .displayweather .maincard .cardsubtitle {
   position: absolute;
-  left: 10px;
-
-  color: grey;
-  margin-top: -8px;
+  top: 169px;
+  left: 143px;
+  font-size: 17px;
 }
-.displayweather h1 {
-  font-size: 5rem;
-  margin: -10px;
-  margin-left: -150px;
+
+.displayweather .weather-temperature-text {
+  font-size: 17px;
+  position: absolute;
+  top: 123px;
+  left: 12px;
+}
+
+.displayweather .weather-temperature {
+  font-size: 17px;
+  position: absolute;
+  top: 121px;
+  left: 144px;
 }
 
 .displayweather .weather-icon {
-  width: 100px;
+  width: 0px;
 
   position: absolute;
   top: 50px;
@@ -45,17 +60,40 @@
 .displayweather .weather-main {
   position: absolute;
 
-  top: 120px;
-  left: 310px;
+  top: 1px;
+  left: 4px;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 4.2rem;
+}
+
+.displayweather .weather-description-text {
+  position: absolute;
+  font-size: 17px;
+  top: 101px;
+  left: 12px;
 }
 
 .displayweather .weather-description {
   position: absolute;
-  left: 10px;
-  font-size: 1.4rem;
+  font-size: 17px;
+  top: 101px;
+  left: 144px; 
 }
+
+.displayweather .weather-humidity-text {
+  position: absolute;
+  font-size: 17px;
+  top: 146px;
+  left: 14px;
+}
+
+.displayweather .weather-humidity {
+  position: absolute;
+  font-size: 17px;
+  top: 146px;
+  left: 144px; 
+}
+
 .displayweather .weatherdetails {
   margin-left: 50px;
   margin-right: 50px;
@@ -64,10 +102,6 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-gap: 20px;
-}
-.displayweather .weatherdetails .section1 {
-  justify-self: right;
-  width: 300px;
 }
 
 h4 {
