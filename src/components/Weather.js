@@ -51,11 +51,11 @@ function Weather() {
     });
   }
 
-  componentDidMount() {
+  const componentDidMount = () =>{
     const data = window.localStorage.getItem("recent");
     this.setState({ recent: JSON.parse(data) });
   }
-
+  
 
   return (
     <div className="weather">
